@@ -1,0 +1,14 @@
+.wrap-table {
+	margin: 40px 0;
+	#filter-text-box { margin-bottom: 40px; }
+}
+.ag-root-wrapper.ag-layout-normal {
+	width: auto;
+	min-height: 80vh;
+}
+
+.ag-theme-alpine {
+	--ag-font-size: 1rem;
+	--ag-row-hover-color: #cbe7f3;
+	--ag-header-cell-hover-background-color: #cbe7f3;
+}

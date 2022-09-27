@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	</head>
+	<body>
+		<div id="app">
+			<form>
+				<input type="text">
+				<input type="submit" value="Go!" />
+			</form>
+		</div>
+
+		<script>
+			document.addEventListener('DOMContentLoaded', function () {
+				const form = document.querySelector('form');
+				let app = document.getElementById('app');
+				let span = app.querySelector('span');
+
+				form.addEventListener('submit', (event) => {
+					event.preventDefault();
+					const input = document.querySelector('input').value;
+
+					magnitude(input.split(','));
+				})
+
+				function magnitude(nums) {
+					const newList = nums.map(num => num * num);
+					const initialValue = 0;
+					const sumWithInitial = newList.reduce((previousValue, currentValue) => previousValue + currentValue,
+					initialValue);
+
+					if (span != null) {
+						app.removeChild(span);
+					};
+
+					span = document.createElement('span');
+					span.innerHTML = `Magnitude is ${Math.sqrt(sumWithInitial)}`;
+					app.appendChild(span);
+				};
+			});
+		</script>
+	</body>
+</html>

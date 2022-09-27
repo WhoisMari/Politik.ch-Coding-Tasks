@@ -1,0 +1,72 @@
+.affair-cell {
+	cursor: pointer;
+	text-decoration: underline;
+	text-underline-position: under;
+	span {
+		background-color: #eaf9ff;
+		padding: 0 5px;
+	}
+}
+
+
+.modal-header {
+	.wrap-header {
+		font-size: 20px;
+		.affair-id {
+			color: #fff;
+			font-weight: bold;
+			background-color: #f7a600;
+			padding: 0 5px;
+			margin-right: 10px;
+		}
+	}
+}
+
+.modal-body {
+	.affair-title {
+		font-weight: bold;
+		font-size: 20px;
+		margin-bottom: 20px;
+	}
+	.wrap-info {
+		display: flex;
+		flex-direction: column;
+		.info { 
+			margin-bottom: 10px;
+			.title { font-weight: 500; }
+		}
+
+		.wrap-texts {
+			display: flex;
+			flex-direction: column;
+			span {
+				margin-bottom: 20px;
+			}
+		}
+	}
+
+	.wrap-biography {
+		margin-top: 20px;
+	}
+}
+
+.close-button {
+	padding: 8px 12px;
+	border-radius: 5px;
+	color: #fff;
+	border: 1px solid #5aa1bf;
+	background-color: #6EC1E4;
+	cursor: pointer;
+	transition: all .2s ease-in;
+	&:hover {background-color: #5aa1bf;}
+}
+
+@media (max-width: 500px) {
+	.modal-header {
+		.wrap-header {
+			display: flex;
+			flex-direction: column;
+			.affair-id { padding: 0; }
+		}
+	}
+}

@@ -1,0 +1,17 @@
+{
+	"affairs": [
+		{"field": "id", "flex": "1"},
+		{"field": "shortId", "flex": "2"},
+		{"field": "updated", "flex": "3"}
+	],
+	"councillors":  [
+		{"field": "id", "flex": "1"},
+		{"field": "firstName", "flex": "2"},
+		{"field": "lastName", "flex": "3"}
+	],
+	"councils":  [
+		{"field": "id", "flex": "1"},
+		{"field": "abbreviation", "flex": "2"},
+		{"field": "name", "flex": "3"}
+	]
+}

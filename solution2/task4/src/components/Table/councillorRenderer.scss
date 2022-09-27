@@ -1,0 +1,71 @@
+.custom-link {
+	cursor: pointer;
+	text-decoration: underline;
+	text-underline-position: under;
+}
+
+
+.councillor-cell {
+	@extend .custom-link;
+	span { background-color: #eaf9ff; padding: 0 5px; }
+}
+
+.modal-body {
+	display: flex;
+	flex-direction: column;
+	.wrap-basic-info {
+		display: flex;
+		padding-bottom: 20px;
+		border-bottom: 1px solid #ccc;
+		.basic-info {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			margin-left: 20px;
+			.title {
+				font-weight: bold;
+			}
+			.id {
+				width: 52px;
+				color: #fff;
+				font-weight: bold;
+				background-color: #f7a600;
+				padding: 0 5px;
+			}
+			.filter {
+				@extend .custom-link;
+				transition: all .2s ease-in;
+				&:hover {
+					color: #5aa1bf;
+				}
+			}
+		}
+	}
+
+	.wrap-biography {
+		margin-top: 20px;
+	}
+}
+
+.close-button {
+	padding: 8px 12px;
+	border-radius: 5px;
+	color: #fff;
+	border: 1px solid #5aa1bf;
+	background-color: #6EC1E4;
+	cursor: pointer;
+	transition: all .2s ease-in;
+	&:hover {background-color: #5aa1bf;}
+}
+
+@media (max-width: 500px) {
+	.modal-body{
+		.wrap-basic-info {
+			flex-direction: column;
+			.basic-info {
+				margin-left: 0;
+				margin-top: 20px;
+			}
+		}
+	}
+}

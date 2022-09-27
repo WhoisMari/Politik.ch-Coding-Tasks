@@ -1,0 +1,13 @@
+body {
+	background-color: #fff;
+}
+.wrap-pagination {margin: 10px 0;}
+.wrap-previous-next {
+	display: flex;
+	justify-content: space-between;
+	text-decoration: underline;
+	text-underline-position: under;
+	margin: 10px 0;
+}
+
+.wrap-previous-next span {cursor: pointer;}

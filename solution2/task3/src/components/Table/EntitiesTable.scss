@@ -1,0 +1,20 @@
+.wrap-table {
+	margin: 20px 0;
+	.filter-table-input {
+		margin-bottom: 20px;
+		&:focus {
+			border-color: #95d2eb;
+			box-shadow: 0 0 0 0.25rem #76c5e54d;
+		}
+	}
+}
+.ag-root-wrapper.ag-layout-normal {
+	width: auto;
+	min-height: 50vh;
+}
+
+.ag-theme-alpine {
+	--ag-font-size: 1rem;
+	--ag-row-hover-color: #cbe7f3;
+	--ag-header-cell-hover-background-color: #cbe7f3;
+}
